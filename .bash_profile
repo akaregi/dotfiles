@@ -1,0 +1,4 @@
+. ~/.profile
+. ~/.bashrc
+
+cd ~
