@@ -1,31 +1,17 @@
-# function
-is_exists() {
-	which "$1" >/dev/null 2>&1
-	return $?
-}
-
-# main
 if [ -z "${DOTPATH:-}"  ]; then
    	DOTPATH=~/.dotfiles; export DOTPATH
 fi
 
-if is_exists "git"; then
-  echo "Git found. Continue..."
-else
-	echo "Git is required."
-	exit 1
-fi
-
 command rm -rf ~/.vim
 command cd $DOTPATH
+
+command mkdir ~/.backup
 
 for f in .??*
 do
 	[ "$f" = ".git"  ]      && continue
 	[ "$f" = ".gitignore" ] && continue
 	[ "$f" = ".viminfo" ]   && continue
-	rm -rf $HOME/$f
+	mv $HOME/$f ~/.backup/$f
 	ln -sn $HOME/.dotfiles/$f $HOME/$f
 done
-
-git clone --recursive git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

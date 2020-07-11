@@ -1,44 +1,48 @@
-" Be sure to execute :PluginInstall, suck Vundle
-" Vundle install: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" General
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set backspace=indent,eol,start
 
-" Be iMproved.
-set nocompatible
-filetype off
+" Status Line
+set laststatus=2
+set cmdheight=1
 
-set rtp+=~/.vim/bundle/Vundle.vim
+" File Util
+set autoread
+set hidden
+set noswapfile
+set nobackup
 
-call vundle#begin()
-  " Vundle.
-  Plugin 'VundleVim/Vundle.vim'
+" View
+set showmatch
+set showcmd
+set showmode
+set title
+set number
+set ruler
+set showmatch
+set cursorline
+set scrolloff=5
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 
-  " Colorscheme
-  Plugin 'ayu-theme/ayu-vim'
-  Plugin 'tomasr/molokai'
-  
-  " Language support
-  Plugin 'sheerun/vim-polyglot'
+" Tab Util
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set smartindent
+set autoindent
 
-  " Parenthesis
-  Plugin 'jiangmiao/auto-pairs'
-  Plugin 'tpope/vim-surround'
+" Search Util
+set wrapscan
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
 
-  " Git support
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'airblade/vim-gitgutter'
+" Command Util
+set wildmenu
 
-  " UI
-  Plugin 'scrooloose/nerdtree'
-  Plugin 'itchyny/lightline.vim'
+" set nobackup
+set nobackup
 
-  " Indent
-  Plugin 'Yggdroot/indentLine'
-call vundle#end()
-
-filetype plugin indent on
-
-set termguicolors
-
-colorscheme ayu
-
-source ~/.vim/rc/common.vim
-source ~/.vim/rc/config.vim
