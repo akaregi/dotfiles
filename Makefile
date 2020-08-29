@@ -1,3 +1,3 @@
 .PHONY: install
 install:
-	./install.sh
+	./tasks/install.sh
