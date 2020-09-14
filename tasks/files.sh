@@ -1,4 +1,4 @@
-FILES = array=(
+FILES=(
     ".bash_profile"
     ".bashrc"
     ".vimrc"
