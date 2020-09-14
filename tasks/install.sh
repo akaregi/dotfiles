@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-. files.sh
+. $HOME/.dotfiles/tasks/files.sh
 
 for i in "${FILES[@]}" do
     rm -rf $HOME/$i
