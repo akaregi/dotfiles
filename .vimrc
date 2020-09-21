@@ -45,3 +45,6 @@ set wildmenu
 
 " set nobackup
 set nobackup
+
+colorscheme ron
+syntax on
