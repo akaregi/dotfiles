@@ -1,50 +1,75 @@
-" General
-set encoding=utf-8
+set nocompatible
+
+"
+" Encode
+"
+set encoding=utf-8 nobomb
 set fileencoding=utf-8
 set fileencodings=utf-8
+
+" 
+" Mode
+"
+set esckeys
 set backspace=indent,eol,start
 
+"
 " Status Line
-set laststatus=2
+"
 set cmdheight=1
+set laststatus=2
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 
+"
 " File Util
+"
 set autoread
 set hidden
 set noswapfile
 set nobackup
 
+"
 " View
-set showmatch
-set showcmd
-set showmode
+"
 set title
 set number
 set ruler
-set showmatch
 set cursorline
+set showmatch
+set showcmd
+set showmode
+set showmatch
 set scrolloff=5
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 
-" Tab Util
+"
+" Tab
+"
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set smartindent
 set autoindent
 
-" Search Util
+"
+" Searching
+"
 set wrapscan
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
 
-" Command Util
+"
+" Command
+"
 set wildmenu
 
-" set nobackup
-set nobackup
+"
+" Others
+"
+set ttyfast
+set gdefault
+set noerrorbells
 
 colorscheme ron
 syntax on
