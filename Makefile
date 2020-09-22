@@ -10,3 +10,7 @@ install:
 .PHONY: clean
 clean:
 	@$(foreach val, $(DOTFILES), rm -rf $(HOME)/$(val);)
+
+.PHONY: list
+list:
+	@$(foreach val, $(DOTFILES), echo $(HOME)/$(val);)
