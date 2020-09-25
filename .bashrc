@@ -34,7 +34,7 @@ alias which='type -a'
 alias ..='cd ..'
 alias job='jobs -l'
 
-alias du='dh -kh'
+alias du='du -kh'
 alias df='df -kTh'
 
 alias grep='grep --color=auto'
