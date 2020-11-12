@@ -6,6 +6,8 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
+export PATH=$PATH:~/.dotfiles/bin
+
 export PAGER='less'
 export LESS='-e -g -i -w -z-4 -F -J -M -N -R -X -P%t?f%f :stdin .?pb%pb\%:?lbLine %lb:?bbByte %bb:-...'
 
