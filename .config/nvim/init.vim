@@ -10,7 +10,6 @@ set fileencodings=utf-8
 " 
 " Mode
 "
-set esckeys
 set backspace=indent,eol,start
 
 "
