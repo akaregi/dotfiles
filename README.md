@@ -1,11 +1,25 @@
 # dotfiles
 
-## Install, uninstall, list
+## How to use
+
+### Download
 
 ```bash
+$ git clone https://github.com/akaregi/dotfiles.git ~/.dotfiles
+```
+
+### Install
+
+```bash
+$ cd ~/.dotfiles
 $ make       # to install
-$ make clean # to uninstall
-$ make list  # to list files for installing
+```
+
+### Uninstall
+
+```bash
+$ cd ~/.dotfiles
+$ make clean
 ```
 
 ## License
